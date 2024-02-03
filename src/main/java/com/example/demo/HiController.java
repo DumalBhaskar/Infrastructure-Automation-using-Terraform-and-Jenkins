@@ -1,18 +1,18 @@
-package com.ts;
+package com.example.demo;
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HiController {
 	
-	@RequestMapping("hi")
+	@GetMapping("hi")
 	public String hi() {
 		return "Hi! Welcome to Spring REST";
 	}
 	
-	@RequestMapping("hello")
-	public String hello() {
+	@GetMapping("hello")
+	public String hellolo() {
 		return "Hello! Welcome to SpringBoot";
 	}
 
