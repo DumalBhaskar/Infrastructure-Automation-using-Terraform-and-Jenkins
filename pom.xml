@@ -49,7 +49,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>demo</finalName>
+		<finalName>springwebapp</finalName>
 	</build>
 
 </project>
