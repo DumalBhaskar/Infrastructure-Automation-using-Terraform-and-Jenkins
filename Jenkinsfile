@@ -23,25 +23,20 @@ pipeline {
         stage('Formating terraform code'){
             steps{
                 script{
-                    
                          sh 'terraform fmt'
-                    
                 }
             }
         }
         stage('Validating Terraform'){
             steps{
                 script{
-                    
                          sh 'terraform validate'
-                    
                 }
             }
         }
         stage('Previewing the infrastructure'){
             steps{
                 script{
-                    
                          sh 'terraform plan'
                     
                     input(message: "Are you sure to proceed?", ok: "proceed")
@@ -53,7 +48,6 @@ pipeline {
                 script{
                     
                          sh 'terraform $action --auto-approve'
-                    
                 }
             }
         }
