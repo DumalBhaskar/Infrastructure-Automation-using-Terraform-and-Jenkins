@@ -2,4 +2,4 @@
 
 ## Project Architecture
 
-![Project Architecture diagram](hbf.draw.io)
+![Project Architecture diagram](hbf.drawio.png)
